@@ -53,6 +53,7 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.mlkit.vision.common.InputImage;
 //import com.google.mlkit.vision.objects.DetectedObject;
 //import com.google.mlkit.vision.objects.ObjectDetection;
@@ -75,7 +76,7 @@ import java.util.PriorityQueue;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private static final String TAG = "MainActivity";
-    private ImageView mImageView;
+    private ImageView mImageView, easy_view;
     private Button mTextButton, btn_zoom;
     private Button mFaceButton, btn_Restore, btn_Remove, btn_reset;
     private int REQUEST_CODE_FOLDER = 456;
@@ -84,10 +85,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private SeekBar seekBar, seekbar_size;
     private ImageView btnUndo, btnRedo;
     private ConstraintLayout constran;
-    // Max width (portrait mode)
-    private Integer mImageMaxWidth;
-    // Max height (portrait mode)
-    private Integer mImageMaxHeight;
     private ArrayList<Integer> array_for = new ArrayList<>();
     private int stroke_size = 10;
     private boolean mode = false; // false la xoa
@@ -96,9 +93,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private int old_zoom = 1;
     private Stack<Bitmap> undo, redo;
     private long last_click = 0;
-    private boolean move = false;
     private float lastX = 0, lastY = 0, last_Hori_Bias = 0, last_Ver_Bias = 0;
-    private int max_zoom = 4, min_zoom = 1;
+    private int max_zoom = 7, min_zoom = 1;
+//    private int width = 0;
+//    private int height = 0;
 
     /**
      * Number of results to show in the UI.
@@ -141,14 +139,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         btnUndo = findViewById(R.id.btnUndo);
         btnRedo = findViewById(R.id.btnRedo);
         btn_reset = findViewById(R.id.btn_reset);
+        easy_view = findViewById(R.id.easy_view);
 
         btn_reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 zoom_size = 1;
-                stroke_size = stroke_size / zoom_size * old_zoom;
+                stroke_size = seekbar_size.getProgress();
                 ConstraintLayout.LayoutParams layoutParams = new ConstraintLayout.LayoutParams(mImageView.getWidth() * zoom_size / old_zoom, mImageView.getHeight() * zoom_size / old_zoom);
                 mImageView.setLayoutParams(layoutParams);
+                easy_view.setLayoutParams(layoutParams);
                 ConstraintSet cs = new ConstraintSet();
                 cs.clone(constran);
                 cs.connect(mImageView.getId(), ConstraintSet.BOTTOM, constran.getId(), ConstraintSet.BOTTOM);
@@ -158,6 +158,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 cs.setHorizontalBias(mImageView.getId(), last_Hori_Bias);
                 cs.setVerticalBias(mImageView.getId(), last_Ver_Bias);
                 cs.setDimensionRatio(mImageView.getId(), "1:1");
+
+                cs.connect(easy_view.getId(), ConstraintSet.BOTTOM, constran.getId(), ConstraintSet.BOTTOM);
+                cs.connect(easy_view.getId(), ConstraintSet.END, constran.getId(), ConstraintSet.END);
+                cs.connect(easy_view.getId(), ConstraintSet.START, constran.getId(), ConstraintSet.START);
+                cs.connect(easy_view.getId(), ConstraintSet.TOP, constran.getId(), ConstraintSet.TOP);
+                cs.setHorizontalBias(easy_view.getId(), last_Hori_Bias);
+                cs.setVerticalBias(easy_view.getId(), last_Ver_Bias);
+                cs.setDimensionRatio(easy_view.getId(), "1:1");
                 cs.applyTo(constran);
                 old_zoom = zoom_size;
             }
@@ -236,7 +244,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         btnUndo.setEnabled(false);
         btnRedo.setEnabled(false);
 
-        seekbar_size.setMax(50);
+        seekbar_size.setMax(100);
         seekbar_size.setMin(10);
         seekbar_size.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -296,19 +304,20 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 .simple_spinner_dropdown_item, items);
         dropdown.setAdapter(adapter);
         dropdown.setOnItemSelectedListener(this);
-        mImageView.setOnTouchListener(new View.OnTouchListener() {
+        easy_view.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()) {
                     case MotionEvent.ACTION_DOWN:
                         if(zoom) {
-                            move = false;
                             if(SystemClock.elapsedRealtime() - last_click < 200) {
-                                zoom_size = (zoom_size == max_zoom) ? min_zoom  : zoom_size + 1;
-                                stroke_size = stroke_size / zoom_size * old_zoom;
+                                zoom_size = (zoom_size == max_zoom) ? min_zoom  : zoom_size + 2;
+                                stroke_size = seekbar_size.getProgress() / zoom_size;
                                 ConstraintLayout.LayoutParams layoutParams = new ConstraintLayout.LayoutParams(mImageView.getWidth() * zoom_size / old_zoom, mImageView.getHeight() * zoom_size / old_zoom);
                                 mImageView.setLayoutParams(layoutParams);
+                                easy_view.setLayoutParams(layoutParams);
                                 ConstraintSet cs = new ConstraintSet();
+
                                 cs.clone(constran);
                                 cs.connect(mImageView.getId(), ConstraintSet.BOTTOM, constran.getId(), ConstraintSet.BOTTOM);
                                 cs.connect(mImageView.getId(), ConstraintSet.END, constran.getId(), ConstraintSet.END);
@@ -319,20 +328,31 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                                 cs.setHorizontalBias(mImageView.getId(), last_Hori_Bias);
                                 cs.setVerticalBias(mImageView.getId(), last_Ver_Bias);
                                 cs.setDimensionRatio(mImageView.getId(), "1:1");
+
+                                cs.connect(easy_view.getId(), ConstraintSet.BOTTOM, constran.getId(), ConstraintSet.BOTTOM);
+                                cs.connect(easy_view.getId(), ConstraintSet.END, constran.getId(), ConstraintSet.END);
+                                cs.connect(easy_view.getId(), ConstraintSet.START, constran.getId(), ConstraintSet.START);
+                                cs.connect(easy_view.getId(), ConstraintSet.TOP, constran.getId(), ConstraintSet.TOP);
+                                cs.setHorizontalBias(easy_view.getId(), last_Hori_Bias);
+                                cs.setVerticalBias(easy_view.getId(), last_Ver_Bias);
+                                cs.setDimensionRatio(easy_view.getId(), "1:1");
                                 cs.applyTo(constran);
                                 old_zoom = zoom_size;
                                 last_click = 0;
+
                                 return true;
                             }
                             lastX = event.getX();
                             lastY = event.getY();
                             last_click = SystemClock.elapsedRealtime();
                             return true;
+                        } else {
+                            undo.push(((BitmapDrawable) mImageView.getDrawable()).getBitmap());
+                            btnUndo.setEnabled(true);
                         }
-                        undo.push(((BitmapDrawable)mImageView.getDrawable()).getBitmap());
-                        btnUndo.setEnabled(true);
                     case MotionEvent.ACTION_MOVE:
                         if(!zoom){
+                            eraser_view(event.getX()/zoom_size, event.getY()/zoom_size, stroke_size);
                             if(mode) {
                                 reStore(event.getX()/zoom_size, event.getY()/zoom_size, stroke_size);
                             } else {
@@ -356,15 +376,22 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                                 last_Ver_Bias = last_Ver_Bias - ver_Bias;
                             ConstraintSet cs = new ConstraintSet();
                             cs.clone(constran);
+
                             cs.setHorizontalBias(mImageView.getId(), (float) last_Hori_Bias);
                             cs.setVerticalBias(mImageView.getId(), (float) last_Ver_Bias);
-                            Log.e("WH", "onTouch: " + last_Hori_Bias + " - " + last_Ver_Bias);
+
+                            cs.setHorizontalBias(easy_view.getId(), (float) last_Hori_Bias);
+                            cs.setVerticalBias(easy_view.getId(), (float) last_Ver_Bias);
+
                             cs.applyTo(constran);
                             lastX = event.getX();
                             lastY = event.getY();
                         }
                         return true;
-                    case MotionEvent.ACTION_UP:
+                    case MotionEvent.ACTION_UP:Bitmap oldbitmap = ((BitmapDrawable)mImageView.getDrawable()).getBitmap();
+                        int width = oldbitmap.getWidth();
+                        int height = oldbitmap.getHeight();
+                        easy_view.setImageBitmap(Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888));
                         return true;
                     default:
                         return false;
@@ -372,6 +399,40 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             }
         });
 
+    }
+
+    private void eraser_view(float X, float Y, int size){
+        Bitmap oldbitmap = ((BitmapDrawable)mImageView.getDrawable()).getBitmap();
+        int width = oldbitmap.getWidth();
+        int height = oldbitmap.getHeight();
+        Bitmap background = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        int[] pixels = new int[width * height];
+        background.getPixels(pixels, 0, width, 0, 0, width, height);int start_x = (int)X - size,
+                end_x = (int)X + size,
+                start_y = (int)Y - size,
+                end_y = (int)Y + size;
+        if((int)X - size < 0){
+            start_x = 0;
+        }
+        if((int)X + size > mSelectedImage.getWidth()){
+            end_x = mSelectedImage.getWidth();
+        }
+        if((int)Y - size < 0){
+            start_y = 0;
+        }
+        if((int)Y + size > mSelectedImage.getHeight()){
+            end_y = mSelectedImage.getHeight();
+        }
+        for(int y = start_y; y < end_y; ++y){
+            for(int x = start_x; x < end_x; ++x){
+                double value = Math.abs(Math.pow((y - Y), 2) + Math.pow((x - X), 2));
+                if(value <=  Math.pow(size, 2))
+                    pixels[y*width + x] = Color.RED;
+            }
+        }
+        Bitmap newBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        newBitmap.setPixels(pixels, 0, width, 0, 0, width, height);
+        easy_view.setImageBitmap(newBitmap);
     }
 
     private void reStore(float X, float Y, int size){
@@ -652,6 +713,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 //                Bitmap temp2 = scaleCenterCrop(mSelectedImage, mImageView.getWidth(), mImageView.getHeight());
                 mSelectedImage = ConvetrSameSize(mSelectedImage, mImageView.getWidth(), mImageView.getHeight(), 1, 0.0f);
                 mImageView.setImageBitmap(mSelectedImage);
+                Bitmap oldbitmap = ((BitmapDrawable)mImageView.getDrawable()).getBitmap();
 
             } catch (FileNotFoundException e) {
                 Toast.makeText(MainActivity.this, "Something wrong! You can not use this photo!", Toast.LENGTH_SHORT).show();
