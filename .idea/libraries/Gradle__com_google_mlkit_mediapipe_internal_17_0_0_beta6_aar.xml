@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.mlkit:mediapipe-internal:17.0.0-beta6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/70346c2ce1ba464b647470b8a3a3ce3c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/70346c2ce1ba464b647470b8a3a3ce3c/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/70346c2ce1ba464b647470b8a3a3ce3c/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4685d8e3a5ab4b7d797fbdee16834d14/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4685d8e3a5ab4b7d797fbdee16834d14/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4685d8e3a5ab4b7d797fbdee16834d14/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

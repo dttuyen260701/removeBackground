@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.mlkit:vision-interfaces:16.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c434802ed2bc9ad0baab1c86208fc1d9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c434802ed2bc9ad0baab1c86208fc1d9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c434802ed2bc9ad0baab1c86208fc1d9/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8910ed221003a4ee081b178ffb1b67b0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8910ed221003a4ee081b178ffb1b67b0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8910ed221003a4ee081b178ffb1b67b0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,348 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:2:1-30:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\208a6d12c20026aef2508817c8ed21df\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\b1bfc582767c8e05d3901fda55c461d7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c6b68adcef5a07e6ff294485ddada299\AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.mlkit:mediapipe-internal:17.0.0-beta6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\4685d8e3a5ab4b7d797fbdee16834d14\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.mlkit:vision-common:17.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\27e112aa6fff1a6e6e8aec6e057109ce\AndroidManifest.xml:2:1-18:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\030d1b541146ed0e9eace30f993a4704\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ca8f3c01b3f96e5d1d8bd3b501c4d280\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ccf69a54834280e6ed09f899d8d88ac5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\8af79a9f56811aaaab8261b3dd18600a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c276595ec2045d93443e3aa5184563f2\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.mlkit:vision-interfaces:16.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\8910ed221003a4ee081b178ffb1b67b0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c754f19d03009a27d14fd7fca50d00d7\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\5ef7d94f321c6a68a17af8299eb99046\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\06f8e68167a69f8e90574041d2632ac3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ea37b4916b4982e4f13aa1cd889de36d\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\325cd22b94ded92792abadd7212e766e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\3eaff13cefe630cd52fac4adfe3ca166\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\98903fc04ffc113295d648205d8c3551\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\03a7783e8471b100832474cf39e32056\AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:16.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ac20367e566b2788ecb3926678ddf0c4\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\2b74c6e46bf2c3b653aeba173cf57e53\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\2ad6d71b7ccbdc09f80312ebb76ec00c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\43e762c1b06171775a70995f192623af\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\5e4e748025996a7c252129bee9b69a9a\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\25e5cc0c63882a55525f89a4b2f0e2f0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\64651a95549556de65d6197c0df87b42\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\a2465803a272eba37b79b8c5cc349264\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\808cad8ecf8a0716ef420d99a650010e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\06fab42a05486b6ab97b1730639bd7bb\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\a472986771733e6aa8d35fc28e296138\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\594e5974e78edac2de4af92a18a58492\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.2.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ecf70f77d4f58e3b0ce4de700fc0e697\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\7e791a5d4399e8794945a6db7a201f28\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\1fcd49f8c8186a3f3195b27d46e79b0d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\897c973dc5b209b76c09e5433a68745d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c844151446b79e270eb0c48b8b394973\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\6109b36393abcc5d592fe57bbee3d437\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\9d93ae71fed4478b568231f98e679fd1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\8c8af971c8ddf91b8423a678ffd4785e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d073d06a9987bbf71090db8dde97b390\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\f9cfac08757d3e0f3d4ce5ea8f4ed95b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\bcc31b23a32973658b85ef6726f12241\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\cad566afb07057dec0e99f5c259bcbc7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\be7ffc7c49342ec312ff12eeb4715713\AndroidManifest.xml:2:1-9:12
+INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:3:5-39
+		INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+		INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:5:5-66
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:6:5-7:38
+	android:maxSdkVersion
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:7:9-35
+	android:name
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:8:5-9:38
+	android:maxSdkVersion
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:9:9-35
+	android:name
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:8:22-77
+application
+ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:10:5-28:19
+MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c6b68adcef5a07e6ff294485ddada299\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c6b68adcef5a07e6ff294485ddada299\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:vision-common:17.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\27e112aa6fff1a6e6e8aec6e057109ce\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:vision-common:17.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\27e112aa6fff1a6e6e8aec6e057109ce\AndroidManifest.xml:8:5-16:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ca8f3c01b3f96e5d1d8bd3b501c4d280\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ca8f3c01b3f96e5d1d8bd3b501c4d280\AndroidManifest.xml:9:5-20
+MERGED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c276595ec2045d93443e3aa5184563f2\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c276595ec2045d93443e3aa5184563f2\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c754f19d03009a27d14fd7fca50d00d7\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c754f19d03009a27d14fd7fca50d00d7\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\5ef7d94f321c6a68a17af8299eb99046\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\5ef7d94f321c6a68a17af8299eb99046\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.core:core:1.2.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ecf70f77d4f58e3b0ce4de700fc0e697\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ecf70f77d4f58e3b0ce4de700fc0e697\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\7e791a5d4399e8794945a6db7a201f28\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\7e791a5d4399e8794945a6db7a201f28\AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\be7ffc7c49342ec312ff12eeb4715713\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\be7ffc7c49342ec312ff12eeb4715713\AndroidManifest.xml:7:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.2.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ecf70f77d4f58e3b0ce4de700fc0e697\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:13:9-41
+	android:roundIcon
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:14:9-54
+	android:icon
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:12:9-43
+	android:allowBackup
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:11:9-35
+	android:theme
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:16:9-40
+activity#com.google.codelab.mlkit.MainActivity
+ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:17:9-27:20
+	android:screenOrientation
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:18:13-49
+	android:exported
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:20:13-36
+	android:configChanges
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:19:13-74
+	android:largeHeap
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:17:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:22:13-26:29
+action#android.intent.action.MAIN
+ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml:25:27-74
+uses-sdk
+INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\208a6d12c20026aef2508817c8ed21df\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\208a6d12c20026aef2508817c8ed21df\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\b1bfc582767c8e05d3901fda55c461d7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\b1bfc582767c8e05d3901fda55c461d7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c6b68adcef5a07e6ff294485ddada299\AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c6b68adcef5a07e6ff294485ddada299\AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:mediapipe-internal:17.0.0-beta6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\4685d8e3a5ab4b7d797fbdee16834d14\AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:mediapipe-internal:17.0.0-beta6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\4685d8e3a5ab4b7d797fbdee16834d14\AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:vision-common:17.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\27e112aa6fff1a6e6e8aec6e057109ce\AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:vision-common:17.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\27e112aa6fff1a6e6e8aec6e057109ce\AndroidManifest.xml:6:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\030d1b541146ed0e9eace30f993a4704\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\030d1b541146ed0e9eace30f993a4704\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ca8f3c01b3f96e5d1d8bd3b501c4d280\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ca8f3c01b3f96e5d1d8bd3b501c4d280\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ccf69a54834280e6ed09f899d8d88ac5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ccf69a54834280e6ed09f899d8d88ac5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\8af79a9f56811aaaab8261b3dd18600a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\8af79a9f56811aaaab8261b3dd18600a\AndroidManifest.xml:20:5-44
+MERGED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c276595ec2045d93443e3aa5184563f2\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c276595ec2045d93443e3aa5184563f2\AndroidManifest.xml:18:5-43
+MERGED from [com.google.mlkit:vision-interfaces:16.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\8910ed221003a4ee081b178ffb1b67b0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:vision-interfaces:16.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\8910ed221003a4ee081b178ffb1b67b0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c754f19d03009a27d14fd7fca50d00d7\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c754f19d03009a27d14fd7fca50d00d7\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\5ef7d94f321c6a68a17af8299eb99046\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\5ef7d94f321c6a68a17af8299eb99046\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\06f8e68167a69f8e90574041d2632ac3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\06f8e68167a69f8e90574041d2632ac3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ea37b4916b4982e4f13aa1cd889de36d\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ea37b4916b4982e4f13aa1cd889de36d\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\325cd22b94ded92792abadd7212e766e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\325cd22b94ded92792abadd7212e766e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\3eaff13cefe630cd52fac4adfe3ca166\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\3eaff13cefe630cd52fac4adfe3ca166\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\98903fc04ffc113295d648205d8c3551\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\98903fc04ffc113295d648205d8c3551\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\03a7783e8471b100832474cf39e32056\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\03a7783e8471b100832474cf39e32056\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ac20367e566b2788ecb3926678ddf0c4\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ac20367e566b2788ecb3926678ddf0c4\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\2b74c6e46bf2c3b653aeba173cf57e53\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\2b74c6e46bf2c3b653aeba173cf57e53\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\2ad6d71b7ccbdc09f80312ebb76ec00c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\2ad6d71b7ccbdc09f80312ebb76ec00c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\43e762c1b06171775a70995f192623af\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\43e762c1b06171775a70995f192623af\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\5e4e748025996a7c252129bee9b69a9a\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\5e4e748025996a7c252129bee9b69a9a\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\25e5cc0c63882a55525f89a4b2f0e2f0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\25e5cc0c63882a55525f89a4b2f0e2f0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\64651a95549556de65d6197c0df87b42\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\64651a95549556de65d6197c0df87b42\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\a2465803a272eba37b79b8c5cc349264\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\a2465803a272eba37b79b8c5cc349264\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\808cad8ecf8a0716ef420d99a650010e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\808cad8ecf8a0716ef420d99a650010e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\06fab42a05486b6ab97b1730639bd7bb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\06fab42a05486b6ab97b1730639bd7bb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\a472986771733e6aa8d35fc28e296138\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\a472986771733e6aa8d35fc28e296138\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\594e5974e78edac2de4af92a18a58492\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\594e5974e78edac2de4af92a18a58492\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ecf70f77d4f58e3b0ce4de700fc0e697\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\ecf70f77d4f58e3b0ce4de700fc0e697\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\7e791a5d4399e8794945a6db7a201f28\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\7e791a5d4399e8794945a6db7a201f28\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\1fcd49f8c8186a3f3195b27d46e79b0d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\1fcd49f8c8186a3f3195b27d46e79b0d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\897c973dc5b209b76c09e5433a68745d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\897c973dc5b209b76c09e5433a68745d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c844151446b79e270eb0c48b8b394973\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c844151446b79e270eb0c48b8b394973\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\6109b36393abcc5d592fe57bbee3d437\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\6109b36393abcc5d592fe57bbee3d437\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\9d93ae71fed4478b568231f98e679fd1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\9d93ae71fed4478b568231f98e679fd1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\8c8af971c8ddf91b8423a678ffd4785e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\8c8af971c8ddf91b8423a678ffd4785e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d073d06a9987bbf71090db8dde97b390\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d073d06a9987bbf71090db8dde97b390\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\f9cfac08757d3e0f3d4ce5ea8f4ed95b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\f9cfac08757d3e0f3d4ce5ea8f4ed95b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\bcc31b23a32973658b85ef6726f12241\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\bcc31b23a32973658b85ef6726f12241\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\cad566afb07057dec0e99f5c259bcbc7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\cad566afb07057dec0e99f5c259bcbc7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\be7ffc7c49342ec312ff12eeb4715713\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\be7ffc7c49342ec312ff12eeb4715713\AndroidManifest.xml:5:5-44
+INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+		INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+		ADDED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+		INJECTED from E:\For Work\Learn\final\app\src\main\AndroidManifest.xml
+service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
+ADDED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c6b68adcef5a07e6ff294485ddada299\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:17.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\27e112aa6fff1a6e6e8aec6e057109ce\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:17.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\27e112aa6fff1a6e6e8aec6e057109ce\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:15:9-23:19
+MERGED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:15:9-23:19
+	android:exported
+		ADDED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c6b68adcef5a07e6ff294485ddada299\AndroidManifest.xml:11:13-37
+	tools:targetApi
+		ADDED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:19:13-32
+	android:directBootAware
+		ADDED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:17:13-43
+	android:name
+		ADDED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c6b68adcef5a07e6ff294485ddada299\AndroidManifest.xml:10:13-91
+meta-data#com.google.firebase.components:com.google.mlkit.vision.segmentation.internal.SegmentationRegistrar
+ADDED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c6b68adcef5a07e6ff294485ddada299\AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c6b68adcef5a07e6ff294485ddada299\AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.mlkit:segmentation-selfie:16.0.0-beta4] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c6b68adcef5a07e6ff294485ddada299\AndroidManifest.xml:13:17-130
+meta-data#com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar
+ADDED from [com.google.mlkit:vision-common:17.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\27e112aa6fff1a6e6e8aec6e057109ce\AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.mlkit:vision-common:17.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\27e112aa6fff1a6e6e8aec6e057109ce\AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.mlkit:vision-common:17.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\27e112aa6fff1a6e6e8aec6e057109ce\AndroidManifest.xml:13:17-124
+provider#com.google.mlkit.common.internal.MlKitInitProvider
+ADDED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:9:9-13:38
+	android:authorities
+		ADDED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:11:13-69
+	android:exported
+		ADDED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:12:13-37
+	android:initOrder
+		ADDED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:13:13-35
+	android:name
+		ADDED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:10:13-78
+meta-data#com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar
+ADDED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.mlkit:common:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\d906d8a20f0bcc0cf152f75e021738f2\AndroidManifest.xml:21:17-120
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c276595ec2045d93443e3aa5184563f2\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c276595ec2045d93443e3aa5184563f2\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c276595ec2045d93443e3aa5184563f2\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c276595ec2045d93443e3aa5184563f2\AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\5ef7d94f321c6a68a17af8299eb99046\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\5ef7d94f321c6a68a17af8299eb99046\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\5ef7d94f321c6a68a17af8299eb99046\AndroidManifest.xml:22:13-58
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:25:22-76
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\e862c13a601df88398e5aca1b1a89edf\AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\tuyenpc\.gradle\caches\transforms-2\files-2.1\c2ea4992fdf8d39d5cdca22c659b15a4\AndroidManifest.xml:33:13-132
