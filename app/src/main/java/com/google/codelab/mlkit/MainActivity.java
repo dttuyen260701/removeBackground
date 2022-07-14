@@ -77,7 +77,7 @@ import java.util.PriorityQueue;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private static final String TAG = "MainActivity";
     private ImageView mImageView, easy_view;
-    private Button mTextButton, btn_zoom;
+    private Button mTextButton, btn_zoom, btn_save;
     private Button mFaceButton, btn_Restore, btn_Remove, btn_reset;
     private int REQUEST_CODE_FOLDER = 456;
     private static final int ACTION_REQUEST_EDITIMAGE = 9;
@@ -140,6 +140,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         btnRedo = findViewById(R.id.btnRedo);
         btn_reset = findViewById(R.id.btn_reset);
         easy_view = findViewById(R.id.easy_view);
+        btn_save = findViewById(R.id.btn_save);
 
         btn_reset.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -173,6 +174,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         btn_Remove.setBackgroundColor(getColor(android.R.color.holo_green_dark));
         btn_Remove.setTextColor(getColor(android.R.color.background_light));
+
+        btn_save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SaveImage saveImage = new SaveImage(((BitmapDrawable)mImageView.getDrawable()).getBitmap());
+                saveImage.execute();
+            }
+        });
 
         btn_zoom.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -312,7 +321,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         if(zoom) {
                             if(SystemClock.elapsedRealtime() - last_click < 200) {
                                 zoom_size = (zoom_size == max_zoom) ? min_zoom  : zoom_size + 2;
-                                stroke_size = seekbar_size.getProgress() / zoom_size;
+                                stroke_size = (seekbar_size.getProgress() / zoom_size < 10) ? 10 : Math.round(seekbar_size.getProgress() / zoom_size);
                                 ConstraintLayout.LayoutParams layoutParams = new ConstraintLayout.LayoutParams(mImageView.getWidth() * zoom_size / old_zoom, mImageView.getHeight() * zoom_size / old_zoom);
                                 mImageView.setLayoutParams(layoutParams);
                                 easy_view.setLayoutParams(layoutParams);
@@ -407,10 +416,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         int height = oldbitmap.getHeight();
         Bitmap background = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
         int[] pixels = new int[width * height];
-        background.getPixels(pixels, 0, width, 0, 0, width, height);int start_x = (int)X - size,
-                end_x = (int)X + size,
-                start_y = (int)Y - size,
-                end_y = (int)Y + size;
+        background.getPixels(pixels, 0, width, 0, 0, width, height);
+        int start_x = (int)X - size,
+            end_x = (int)X + size,
+            start_y = (int)Y - size,
+            end_y = (int)Y + size;
         if((int)X - size < 0){
             start_x = 0;
         }
@@ -443,9 +453,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         oldbitmap.getPixels(pixels, 0, width, 0, 0, width, height);
         int[] pixels_1 = new int[width * height];
         int start_x = (int)X - size,
-                end_x = (int)X + size,
-                start_y = (int)Y - size,
-                end_y = (int)Y + size;
+            end_x = (int)X + size,
+            start_y = (int)Y - size,
+            end_y = (int)Y + size;
         if((int)X - size < 0){
             start_x = 0;
         }
@@ -540,7 +550,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                                         rs.copyPixelsFromBuffer(mask_rs_1);
                                         MainActivity.this.mask = rs;
                                         UpdateAutomaticPixelClearingTask task = new UpdateAutomaticPixelClearingTask(mSelectedImage);
-                                        task.execute(100);
+                                        task.execute();
                                     }
                                 })
                         .addOnFailureListener(
@@ -599,7 +609,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
     }
 
-    class UpdateAutomaticPixelClearingTask extends AsyncTask<Integer, Void, Bitmap> {
+    class UpdateAutomaticPixelClearingTask extends AsyncTask<Void, Void, Bitmap> {
 
         private Bitmap bitmap;
         private int accuracy = 0;
@@ -617,7 +627,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
 
         @Override
-        protected Bitmap doInBackground(Integer... ints) {
+        protected Bitmap doInBackground(Void... Void) {
             Bitmap oldBitmap = mask;
             Bitmap test = bitmap;
 
@@ -638,6 +648,62 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             Bitmap newBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
             newBitmap.setPixels(pixels_1, 0, width, 0, 0, width, height);
             return newBitmap;
+        }
+
+        protected void onPostExecute(Bitmap result) {
+            super.onPostExecute(result);
+            mImageView.setImageBitmap(result);
+        }
+    }
+
+    class SaveImage extends AsyncTask<Void, Void, Bitmap> {
+
+        private Bitmap bitmap;
+
+        public SaveImage(Bitmap bitmap) {
+            this.bitmap = bitmap;
+        }
+
+        @Override
+        protected void onPreExecute() {
+
+            super.onPreExecute();
+//            //Toast.makeText(mTextImageFragment.getContext(), "Please wait a few seconds", Toast.LENGTH_LONG);
+//            mTextImageFragment.updateStickerItem(bitmap, 100);
+        }
+
+        @Override
+        protected Bitmap doInBackground(Void... Void) {
+            Bitmap oldBitmap = bitmap;
+
+            int width = oldBitmap.getWidth();
+            int height = oldBitmap.getHeight();
+            int[] pixels = new int[width * height];
+            oldBitmap.getPixels(pixels, 0, width, 0, 0, width, height);
+
+            int pixel;
+
+            int firstX = 999999, firstY = 999999, lastX = 0, lastY = 0;
+//
+            // iteration through pixels
+            for (int y = 0; y < height; ++y) {
+                for (int x = 0; x < width; ++x) {
+                    // get current index in 2D-matrix
+                    int index = y * width + x;
+                    pixel = pixels[index];
+                    if (pixel != Color.TRANSPARENT) {
+                        firstX = (x < firstX) ? x : firstX;
+                        firstY = (y < firstY) ? y : firstY;
+                        lastX = (x > lastX) ? x : lastX;
+                        lastY = (y > lastY) ? y : lastY;
+                    }
+                }
+            }
+
+            Bitmap newBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+            newBitmap.setPixels(pixels, 0, width, 0, 0, width, height);
+            Bitmap resizedBmp = Bitmap.createBitmap(newBitmap, firstX, firstY, lastX - firstX, lastY - firstY);
+            return resizedBmp;
         }
 
         protected void onPostExecute(Bitmap result) {
